@@ -9,4 +9,19 @@ public abstract class Personagem{
     protected int inteligencia;
     protected int sabedoria;
     protected int carisma;
+
+    public Personagem(String nome, int idade, String genero, int forca, int constituicao,
+                      int destreza, int carisma, int inteligencia) {
+        this.nome = nome;
+        this.idade = idade;
+        this.genero = genero;
+        this.forca = forca;
+        this.constituicao = constituicao;
+        this.destreza = destreza;
+        this.carisma = carisma;
+        this.inteligencia = inteligencia;
+    }
+
+    
+
 }
