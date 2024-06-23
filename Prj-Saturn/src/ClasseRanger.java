@@ -1,6 +1,6 @@
 public class ClasseRanger implements Classes {
 
-    public String getNome() {
+    public String getNomeDaClasse() {
         return "Ranger";
     }
 

@@ -1,6 +1,6 @@
 public class ClasseBarbaro implements Classes {
 
-    public String getNome() {
+    public String getNomeDaClasse() {
         return "Bárbaro";
     }
 

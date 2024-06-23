@@ -1,6 +1,6 @@
 public class ClasseFeiticeiro implements Classes {
 
-    public String getNome() {
+    public String getNomeDaClasse() {
         return "Feiticeiro";
     }
 
