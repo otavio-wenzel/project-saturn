@@ -12,7 +12,11 @@ public abstract class Personagem{
     protected int sabedoria;
     protected int carisma;
 
-    public Personagem(String nome, int idade, String genero, Classes classe, int forca, int destreza, int constituicao, int inteligencia, int sabedoria, int carisma) {
+    public Personagem(){}
+
+    public Personagem(String nome, int idade, String genero, Classes classe,
+                    int forca, int destreza, int constituicao, int inteligencia,
+                    int sabedoria, int carisma) {
         this.nome = nome;
         this.idade = idade;
         this.genero = genero;
@@ -23,8 +27,6 @@ public abstract class Personagem{
         this.inteligencia = inteligencia;
         this.sabedoria = sabedoria;
         this.carisma = carisma;
-
-        aplicadorDeModificadores();
     }
 
     public String getNome() {
@@ -123,21 +125,16 @@ public abstract class Personagem{
         modificadorDeCarisma();
     }
 
-    /*/
     @Override
     public String toString() {
-        return "Nome: " + nome +
-                "\nIdade: " + idade +
-                "\nGenero: " + genero +
-                "\nForça: " + forca +
-                "\nDestreza: " + destreza +
-                "\nConstituiçao: " + constituicao +
-                "\nInteligencia: " + inteligencia +
-                "\nSabedoria: " + sabedoria +
-                "\nSabedoria: " + sabedoria;
-    }*/
+        return "Nome=" + nome + ", Idade=" + idade + ", Genero=" + genero + ", Raça=" + getClass().getSimpleName() +
+                ", Classe=" + classe.getClass().getSimpleName() + ", Força=" + forca + ", Destreza=" + destreza +
+                ", Constituição=" + constituicao + ", Inteligencia=" + inteligencia +
+                ", Sabedoria=" + sabedoria + ", Carisma=" + carisma;
+    }
 
     public String exibirIformacoesDoPersonagem() {
+        aplicadorDeModificadores();
         return "\nNome: " + nome +
                 "\nIdade: " + idade +
                 "\nGenero: " + genero +
@@ -150,8 +147,5 @@ public abstract class Personagem{
                 "\nSabedoria: " + sabedoria +
                 "\nCarisma: " + carisma;
     }
-
-
-    
 
 }
