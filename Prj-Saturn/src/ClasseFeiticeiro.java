@@ -1,4 +1,4 @@
-public class ClasseFeiticeiro implements Classes {
+public class ClasseFeiticeiro extends Classes{
 
     public String getNomeDaClasse() {
         return "Feiticeiro";

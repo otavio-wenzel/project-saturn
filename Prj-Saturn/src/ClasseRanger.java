@@ -1,4 +1,4 @@
-public class ClasseRanger implements Classes {
+public class ClasseRanger extends Classes {
 
     public String getNomeDaClasse() {
         return "Ranger";
