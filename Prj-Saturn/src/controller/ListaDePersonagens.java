@@ -1,4 +1,7 @@
+package controller;
 import java.util.ArrayList;
+
+import model.entities.Personagem;
 
 public abstract class ListaDePersonagens {
 

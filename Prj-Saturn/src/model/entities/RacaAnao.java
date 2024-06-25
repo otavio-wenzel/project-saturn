@@ -1,3 +1,4 @@
+package model.entities;
 public class RacaAnao extends Personagem {
 
     public RacaAnao(){}

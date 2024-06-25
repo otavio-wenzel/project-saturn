@@ -1,5 +1,10 @@
+package controller;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import model.entities.*;
+import model.persistence.*;
+import view.Console;
 
 public class GerenciadorDePersonagens {
 

@@ -1,3 +1,4 @@
+package model.entities;
 public abstract class Personagem{
     protected String nome;
     protected int idade;

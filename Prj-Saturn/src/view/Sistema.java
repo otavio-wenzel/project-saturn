@@ -1,4 +1,7 @@
+package view;
 import java.io.IOException;
+
+import controller.GerenciadorDePersonagens;
 
 public class Sistema {
 
@@ -25,7 +28,7 @@ public class Sistema {
         while (true) {
             
             exibirMenu();
-            int op = Console.lerInt("Informe uma opção");
+            int op = Console.lerInt("Digite uma opção");
             
             try {
                 GerenciadorDePersonagens.verificarOpcaoDigitada(op);
