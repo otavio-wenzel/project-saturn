@@ -1,3 +1,4 @@
+package view;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -52,6 +53,4 @@ public class Console {
     public static String lerString() {
         return lerString("Digite uma 'string'");
     }
-
-
 }
